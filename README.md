@@ -13,8 +13,10 @@ This is a simple web application to generate QR codes for text or URLs. It inclu
 Clone the repository and install dependencies.
 
 ` git clone https://github.com/JCFcodex/text-to-qrcode.git`
-` cd text-to-qrcode`
-`npm install`
+
+` cd text-to-qrcode `
+
+` npm install `
 
 ## Usage
 
