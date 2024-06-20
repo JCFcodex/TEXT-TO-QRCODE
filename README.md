@@ -22,7 +22,7 @@ Clone the repository and install dependencies.
 
 Start the server to run the application.
 
-  ` npm start `
+- ` npm start `
 
 Open your web browser and navigate to http://localhost:3000 to use the QR Code Generator.
 
