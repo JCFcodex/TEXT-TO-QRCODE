@@ -12,11 +12,11 @@ This is a simple web application to generate QR codes for text or URLs. It inclu
 
 Clone the repository and install dependencies.
 
-- 1.` git clone https://github.com/JCFcodex/text-to-qrcode.git`
+- ` git clone https://github.com/JCFcodex/text-to-qrcode.git`
 
-- 2.` cd text-to-qrcode `
+- ` cd text-to-qrcode `
 
-- 3.` npm install `
+- ` npm install `
 
 ## Usage
 
