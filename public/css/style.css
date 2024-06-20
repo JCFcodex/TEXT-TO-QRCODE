@@ -1,0 +1,219 @@
+:root {
+  --background-light: #f0f0f0;
+  --background-dark: #181818;
+  --text-light: #333;
+  --text-dark: #f0f0f0;
+  --primary-light: #007bff;
+  --primary-dark: #0056b3;
+}
+
+body {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100vh;
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+body.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+.container {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  text-align: center;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  -o-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+  margin: 2rem;
+}
+
+body.dark-mode .container {
+  background-color: #282c34;
+}
+
+header {
+  background-color: var(--primary-light);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+  -webkit-transition: background-color 0.5s;
+  -o-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+body.dark-mode header {
+  background-color: var(--primary-dark);
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+input[type='text']:focus {
+  border-color: var(--primary-light);
+}
+
+button {
+  background-color: var(--primary-light);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--primary-dark);
+}
+
+.qrcode {
+  margin-top: 20px;
+}
+
+#download-container {
+  display: none;
+  margin-top: 20px;
+}
+
+#download {
+  background-color: var(--primary-light);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#download:hover {
+  background-color: var(--primary-dark);
+}
+
+.theme-switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 24px;
+  position: relative;
+  width: 50px;
+  vertical-align: middle;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider.round {
+  border-radius: 34px;
+  border: 3px solid var(--text-light);
+}
+
+.slider.round:before {
+  content: '';
+  border-radius: 50%;
+  height: 16px;
+  bottom: 1px;
+  left: 2px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+  width: 16px;
+  background-color: var(--text-light);
+}
+
+input:checked + .slider {
+  background-color: var(--primary-light);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(24px);
+  -ms-transform: translateX(24px);
+  transform: translateX(24px);
+  background-color: var(--text-dark);
+}
+
+#theme-switch-label {
+  display: block;
+  margin-left: 0.5rem;
+}

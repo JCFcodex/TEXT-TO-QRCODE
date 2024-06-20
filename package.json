@@ -1,0 +1,14 @@
+{
+  "name": "qrcode-generator",
+  "version": "1.0.0",
+  "description": "A simple QR code generator with dark/light mode toggle.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "express": "^4.17.1",
+    "qrious": "^4.0.2"
+  }
+}
